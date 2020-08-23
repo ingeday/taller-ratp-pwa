@@ -24,11 +24,27 @@
   <title>Paris Métro 1</title>
   <link rel="stylesheet" type="text/css" href="styles/inline.css">
 
+  <!-- Referencia a manifest -->
+  <link rel="manifest" href="/manifest.json">
+
+  <!-- Referencia iconos y metatags para iOS-->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="PWA Ratp">
+  <link rel="apple-touch-icon" href="/images/ios-appicon-152-152.png">
+
+  <!-- Meta description -->
+  <meta name="description" content="Una App tipo PWA">
+
+  <!-- Meta Theme Color para la barra de navegación -->
+  <meta name="theme-color" content="#C00" />
+
 </head>
 <body>
 
   <header class="header">
     <h1 class="header__title">Paris Métro 1</h1>
+    <button id="butInstall" class="headerButton" title="Instalar" aria-label="Install" hidden></button>
     <button id="butRefresh" class="headerButton" aria-label="Refresh"></button>
     <button id="butAdd" class="headerButton" aria-label="Add"></button>
   </header>
@@ -93,6 +109,19 @@
 
   <!-- Uncomment the line below when ready to test with fake data -->
   <script src="scripts/app.js" async></script>
+
+  <script src="scripts/install.js"></script>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/service-worker.js')
+            .then((reg) => {
+              console.log('Service worker registered.', reg);
+            });
+      });
+    }
+    </script>
 
 </body>
 </html>

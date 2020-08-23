@@ -108,6 +108,8 @@ body {
     border: none;
     outline: none;
     cursor: pointer; }
+  .header #butInstall {
+    background: url(/images/install.svg) center center no-repeat; }
   .header #butRefresh {
     background: url(/images/ic_refresh_white_24px.svg) center center no-repeat; }
   .header #butAdd {
