@@ -1,0 +1,28 @@
+{
+  "name": "ratp-pwa",
+  "version": "1.0.0",
+  "description": "Una Aplicacion PWA",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ingeday/taller-ratp-pwa.git"
+  },
+  "keywords": [
+    "RATP",
+    "ingeday",
+    "PWA"
+  ],
+  "author": "@ingeday",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ingeday/taller-ratp-pwa/issues"
+  },
+  "homepage": "https://github.com/ingeday/taller-ratp-pwa#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "http-server": "^0.12.3"
+  }
+}
