@@ -9,7 +9,7 @@
         cardTemplate: document.querySelector('.cardTemplate'),
         container: document.querySelector('.main'),
         addDialog: document.querySelector('.dialog-container'),
-        timeExpiryCache: 1 // en Minutos
+        timeExpiryCache: 5 // en Minutos
     };
 
 
@@ -247,7 +247,7 @@
 
                 var minCached  = (Date.now()-timestampCache)/1000/60;
             
-                if(minCached>(app.timeExpiryCache+4)) {
+                if(minCached>app.timeExpiryCache) {
                     localStorage.removeItem("visibleCards")
                     app.visibleCards = {}
                 } else {
