@@ -19,10 +19,10 @@
      *
      ****************************************************************************/
 
-    document.getElementById('butRefresh').addEventListener('click', function () {
+    //document.getElementById('butRefresh').addEventListener('click', function () {
         // Refresh all of the metro stations
-        app.updateSchedules();
-    });
+        //app.updateSchedules();
+    //});
 
     document.getElementById('butAdd').addEventListener('click', function () {
         // Open/show the add new station dialog
