@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"node index"
+    "start": "node index"
   },
   "repository": {
     "type": "git",
@@ -24,6 +24,7 @@
   "homepage": "https://github.com/ingeday/taller-ratp-pwa#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "express-http-to-https": "^1.1.4",
     "http-server": "^0.12.3"
   }
 }
